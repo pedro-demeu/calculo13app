@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cálculo 13º App</string>
+    <string name="calc">Calcular</string>
+    <string-array name="parcelasOptions">
+        <item>Parcela Única</item>
+        <item>Primeira</item>
+        <item>Segunda</item>
+    </string-array>
+</resources>

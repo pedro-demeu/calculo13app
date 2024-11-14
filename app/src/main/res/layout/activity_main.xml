@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de 13º"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salário bruto"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/qtyDependents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dependentes"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/months"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Meses trabalhados"
+        android:inputType="number"
+        android:layout_marginBottom="24dp" />
+
+    <Spinner
+        android:id="@+id/spinnerParcelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:entries="@array/parcelasOptions" />
+
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calc"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp" />
+
+</LinearLayout>
